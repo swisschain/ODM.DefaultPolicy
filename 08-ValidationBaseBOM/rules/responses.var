@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>responses</name>
+  <uuid>32fef699-caad-4bbb-b905-b59c25a2cb9f</uuid>
+  <variables name="AutoApproval" type="io.swisschain.policy.response.TransferValidationResponse" initialValue="new io.swisschain.policy.response.TransferValidationResponse(io.swisschain.policy.response.TransferValidationResult.Approve, &quot;Automatical approval&quot;)" verbalization="the Automatical approval"/>
+  <variables name="AutoDecline" type="io.swisschain.policy.response.TransferValidationResponse" initialValue="new io.swisschain.policy.response.TransferValidationResponse(io.swisschain.policy.response.TransferValidationResult.Decline, &quot;Automatical decline&quot;)" verbalization="the Automatical decline"/>
+  <variables name="WaitResponse" type="io.swisschain.policy.response.TransferValidationResponse" initialValue="new io.swisschain.policy.response.TransferValidationResponse(io.swisschain.policy.response.TransferValidationResult.Wait, null)" verbalization="the Wait response"/>
+</ilog.rules.studio.model.base:VariableSet>

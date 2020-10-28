@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>vars</name>
+  <uuid>ccc4658c-9f80-482b-bf6b-6bbd8bd1a4e5</uuid>
+  <variables name="resultOfAmountBasedValidation" type="io.swisschain.policy.response.TransferValidationResponse" initialValue="" verbalization="the result of amount based validation"/>
+  <variables name="validationAmount" type="java.lang.String" initialValue="&quot;unknown&quot;" verbalization="the validation amount"/>
+</ilog.rules.studio.model.base:VariableSet>

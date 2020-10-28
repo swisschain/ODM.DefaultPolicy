@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>04 Validation Requirements For Large Amount</name>
+  <uuid>f60cd4d9-0305-4fc9-b92c-1e537abb0765</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[then
+  set 'the result of amount based validation' to 'the Automatical decline' ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

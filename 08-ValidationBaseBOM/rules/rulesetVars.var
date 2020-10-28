@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>rulesetVars</name>
+  <uuid>14e3610c-8df5-4fa4-af9a-437c07570c57</uuid>
+  <variables name="listOfResponses" type="io.swisschain.policy.response.TransferValidationReport" initialValue="new io.swisschain.policy.response.TransferValidationReport()" verbalization="the list of responses"/>
+</ilog.rules.studio.model.base:VariableSet>

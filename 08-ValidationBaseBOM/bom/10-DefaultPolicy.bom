@@ -1,0 +1,160 @@
+
+property loadGetterSetterAsProperties "true"
+property origin "xom:/08-ValidationBaseBOM//10-DefaultPolicy"
+property uuid "e50036aa-ce7b-4458-b16b-01be6790fd1e"
+package io.swisschain.policy.base;
+
+
+public class Asset
+{
+    public string address;
+    public long id;
+    public string symbol;
+    public Asset(long arg1, string arg2, string arg3);
+    public Asset();
+}
+
+public class Blockchain
+{
+    public string id;
+    public io.swisschain.policy.base.NetworkType networkType;
+    public string protocolId;
+    public Blockchain(string arg1, string arg2, io.swisschain.policy.base.NetworkType arg3);
+    public Blockchain();
+}
+
+public class DestinationAddress
+{
+    public string address;
+    public string group;
+    public string name;
+    public string tag;
+    public io.swisschain.policy.base.TagType tagType;
+    public DestinationAddress(string arg1, string arg2, string arg3, string arg4, io.swisschain.policy.base.TagType arg5);
+    public DestinationAddress();
+}
+
+public final class NetworkType
+        extends java.lang.Enum
+{
+    domain {static Private, static Test, static Public}
+    public static final readonly io.swisschain.policy.base.NetworkType Private;
+    public static final readonly io.swisschain.policy.base.NetworkType Public;
+    public static final readonly io.swisschain.policy.base.NetworkType Test;
+    public static io.swisschain.policy.base.NetworkType valueOf(string arg);
+    public static io.swisschain.policy.base.NetworkType[] values();
+}
+
+public class SourceAddress
+{
+    public string address;
+    public string group;
+    public string name;
+    public SourceAddress(string arg1, string arg2, string arg3);
+    public SourceAddress();
+}
+
+public final class TagType
+        extends java.lang.Enum
+{
+    domain {static None, static Text, static Number}
+    public static final readonly io.swisschain.policy.base.TagType None;
+    public static final readonly io.swisschain.policy.base.TagType Number;
+    public static final readonly io.swisschain.policy.base.TagType Text;
+    public static io.swisschain.policy.base.TagType valueOf(string arg);
+    public static io.swisschain.policy.base.TagType[] values();
+}
+
+public class TransferDetails
+{
+    public java.math.BigDecimal amount;
+    public io.swisschain.policy.base.Asset asset;
+    public io.swisschain.policy.base.Blockchain blockchain;
+    public io.swisschain.policy.base.DestinationAddress destinationAddress;
+    public java.math.BigDecimal feeLimit;
+    public long operationId;
+    public io.swisschain.policy.base.SourceAddress sourceAddress;
+    public TransferDetails(long arg1, io.swisschain.policy.base.Blockchain arg2, io.swisschain.policy.base.Asset arg3, io.swisschain.policy.base.SourceAddress arg4, io.swisschain.policy.base.DestinationAddress arg5, java.math.BigDecimal arg6, java.math.BigDecimal arg7);
+    public TransferDetails();
+}
+
+public class TransferValidationRequest
+{
+    public io.swisschain.policy.base.TransferDetails transferDetails;
+    public java.util.List validatedBy domain 0,* class io.swisschain.policy.base.ValidationResult;
+    public TransferValidationRequest(io.swisschain.policy.base.TransferDetails arg1, 
+        java.util.List arg2 domain 0,* class io.swisschain.policy.base.ValidationResult);
+    public TransferValidationRequest();
+    public io.swisschain.policy.response.TransferValidationResponse checkValidators(java.lang.Integer arg1, 
+        java.util.List arg2 domain 0,* class io.swisschain.policy.response.ValidatorWithWeight);
+}
+
+public final class ValidationResolution
+        extends java.lang.Enum
+{
+    domain {static Approved, static Rejected, static Skipped}
+    public static final readonly io.swisschain.policy.base.ValidationResolution Approved;
+    public static final readonly io.swisschain.policy.base.ValidationResolution Rejected;
+    public static final readonly io.swisschain.policy.base.ValidationResolution Skipped;
+    public static io.swisschain.policy.base.ValidationResolution valueOf(string arg);
+    public static io.swisschain.policy.base.ValidationResolution[] values();
+}
+
+public class ValidationResult
+{
+    public io.swisschain.policy.base.ValidationResolution resolution;
+    public string validatedBy;
+    public ValidationResult(string arg1, io.swisschain.policy.base.ValidationResolution arg2);
+    public ValidationResult();
+}
+
+package io.swisschain.policy.response;
+
+
+public class TransferValidationReport
+{
+    public TransferValidationReport();
+    public void registerResponse(io.swisschain.policy.response.TransferValidationResponse arg);
+    public io.swisschain.policy.response.TransferValidationResponse summarize();
+}
+
+public class TransferValidationResponse
+{
+    public string comment;
+    public java.util.List notifyValidators domain 0,* class string;
+    public io.swisschain.policy.response.TransferValidationResult resolution;
+    public TransferValidationResponse(io.swisschain.policy.response.TransferValidationResult arg);
+    public TransferValidationResponse(io.swisschain.policy.response.TransferValidationResult arg1, string arg2);
+    public TransferValidationResponse();
+    public void addValidator(io.swisschain.policy.response.Validator arg);
+    public string toString();
+}
+
+public final class TransferValidationResult
+        extends java.lang.Enum
+{
+    domain {static Approve, static Decline, static Wait}
+    public static final readonly io.swisschain.policy.response.TransferValidationResult Approve;
+    public static final readonly io.swisschain.policy.response.TransferValidationResult Decline;
+    public static final readonly io.swisschain.policy.response.TransferValidationResult Wait;
+    public static io.swisschain.policy.response.TransferValidationResult valueOf(string arg);
+    public static io.swisschain.policy.response.TransferValidationResult[] values();
+}
+
+public class Validator
+{
+    public string id;
+    public string name;
+    public Validator(string arg1, string arg2);
+    public boolean equals(object arg);
+    public int hashCode();
+}
+
+public class ValidatorWithWeight
+{
+    public readonly io.swisschain.policy.response.Validator validator;
+    public readonly java.lang.Integer weight;
+    public ValidatorWithWeight(io.swisschain.policy.response.Validator arg1, java.lang.Integer arg2);
+    public static io.swisschain.policy.response.ValidatorWithWeight create(io.swisschain.policy.response.Validator arg1, java.lang.Integer arg2);
+}
+

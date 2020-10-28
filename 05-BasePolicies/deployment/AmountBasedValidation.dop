@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="AmountBasedValidation" usingRuleflow="true" ruleflowName="00 ValidateBasedOnAmountRuleFlow" targetRuleProjectName="05-BasePolicies">
+  <name>AmountBasedValidation</name>
+  <uuid>8be714e0-1e35-4f75-92b3-de16d9a8eb5d</uuid>
+  <referencedVariables variableName="transferValidationRequest" variableSetName="input">
+    <variableSet href="../../08-ValidationBaseBOM/rules/input.var#57027122-8d79-48b0-936b-af0304111070"/>
+  </referencedVariables>
+  <referencedVariables variableName="listOfResponses" variableSetName="rulesetVars" direction="IN_OUT">
+    <variableSet href="../../08-ValidationBaseBOM/rules/rulesetVars.var#14e3610c-8df5-4fa4-af9a-437c07570c57"/>
+  </referencedVariables>
+  <ruleflow href="../rules/io/swisschain/policy/base/ValidateBasedOnAmount/00%20ValidateBasedOnAmountRuleFlow.rfl#14389c26-86c1-4331-8c47-69d804bbd5c3"/>
+  <extractor xsi:type="ilog.rules.studio.model.query.extractor:QueryExtractor" name="AmountBasedValidation_extractor" validator="Default Validator"/>
+  <targetRuleProject href="../../05-BasePolicies#b2797773-d8e4-44a4-920a-21775f341271"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

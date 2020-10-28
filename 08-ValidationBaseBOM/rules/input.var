@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>input</name>
+  <uuid>57027122-8d79-48b0-936b-af0304111070</uuid>
+  <variables name="transferValidationRequest" type="io.swisschain.policy.base.TransferValidationRequest" initialValue="" verbalization="the transfer validation request"/>
+</ilog.rules.studio.model.base:VariableSet>

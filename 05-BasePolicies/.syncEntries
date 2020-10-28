@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<teamservers>
+<teamserver>
+<target dataSource="" login="odmAdmin" url="http://158.177.182.90:9060/decisioncenter"/>
+<entry baseType="BRLRule" checksum="3101849123" projectName="05-BasePolicies" qualifiedName="io.swisschain.policy.base.ValidateBasedOnAmount.02 Validation Requirements For Small Amount" sourceCS="8EDAE325A6C3DDCC9AB220C238B4F5DA" targetCS="3101849123" type="BRLRule" uuid="55c29037-6d28-41bf-9449-9c9372d5e13d"/>
+<entry baseType="BRLRule" checksum="3834998023" projectName="05-BasePolicies" qualifiedName="io.swisschain.policy.base.ValidateBasedOnAmount.03 Validation Requirements For Medium Amount" sourceCS="2823BA1672F833C9557529485CE0513C" targetCS="3834998023" type="BRLRule" uuid="11a56caf-d1f9-4c62-b617-c127e7fc251e"/>
+<entry baseType="BRLRule" checksum="3984605074" projectName="05-BasePolicies" qualifiedName="io.swisschain.policy.base.ValidateBasedOnAmount.04 Validation Requirements For Large Amount" sourceCS="E6597A3C7427805D12D29F925805E86D" targetCS="3984605074" type="BRLRule" uuid="f60cd4d9-0305-4fc9-b92c-1e537abb0765"/>
+<entry baseType="BRLRule" checksum="3406806823" projectName="05-BasePolicies" qualifiedName="io.swisschain.policy.base.ValidateBasedOnAmount.05 Validation Requirements For unknown asset" sourceCS="8CB9891F79E42CCE0FAE0A0632BB7813" targetCS="3406806823" type="BRLRule" uuid="e4b406b1-940f-4086-bb65-389d5a6fa12f"/>
+<entry baseType="DecisionOperation" checksum="719340753" projectName="05-BasePolicies" qualifiedName="AmountBasedValidation" sourceCS="A7A17E3FB5FEAD3905D00EF59E518154" targetCS="719340753" type="DecisionOperation" uuid="8be714e0-1e35-4f75-92b3-de16d9a8eb5d"/>
+<entry baseType="DecisionTable" checksum="246057300" projectName="05-BasePolicies" qualifiedName="io.swisschain.policy.base.ValidateBasedOnAmount.01 Validation Condition Table" sourceCS="424248491498F234DDC2548861F34223" targetCS="246057300" type="DecisionTable" uuid="454f5cbe-d397-4eb0-a7d3-11ef25a9db61"/>
+<entry baseType="Ruleflow" checksum="3034535267" projectName="05-BasePolicies" qualifiedName="io.swisschain.policy.base.ValidateBasedOnAmount.00 ValidateBasedOnAmountRuleFlow" sourceCS="FCCE0C06C36530063AAAD8C7D7152DFB" targetCS="3034535267" type="Ruleflow" uuid="14389c26-86c1-4331-8c47-69d804bbd5c3"/>
+<entry baseType="RulePackageInfo" checksum="1473771409" projectName="05-BasePolicies" qualifiedName="io" sourceCS="C084868D52DDCF5A2577712FC47AE558" targetCS="1473771409" type="RulePackageInfo" uuid="b1d504b8-f010-4ff1-b7f9-5f12cca4ac06"/>
+<entry baseType="RulePackageInfo" checksum="468650879" projectName="05-BasePolicies" qualifiedName="io.swisschain" sourceCS="48D3BCE6C83E103923958AEBDCF5AD51" targetCS="468650879" type="RulePackageInfo" uuid="2054c65a-ffd7-45e9-8a12-86e859d2f514"/>
+<entry baseType="RulePackageInfo" checksum="506128795" projectName="05-BasePolicies" qualifiedName="io.swisschain.policy" sourceCS="5A38E747C65BF294707D0B21DAA16900" targetCS="506128795" type="RulePackageInfo" uuid="4e87d75a-925a-44cb-ab1b-9e2beba698ce"/>
+<entry baseType="RulePackageInfo" checksum="3038356319" projectName="05-BasePolicies" qualifiedName="io.swisschain.policy.base" sourceCS="4C159DF51B0422E335C7FFD5878C24CF" targetCS="3038356319" type="RulePackageInfo" uuid="06fc1fa3-920e-4ed3-8aed-4e16e885988d"/>
+<entry baseType="RulePackageInfo" checksum="2876616485" projectName="05-BasePolicies" qualifiedName="io.swisschain.policy.base.ValidateBasedOnAmount" sourceCS="2DD2E22A7AD2C948E6231C8D9BB62BDF" targetCS="2876616485" type="RulePackageInfo" uuid="c4b2c532-b1b4-4db0-9d3a-0051989f79cc"/>
+<entry baseType="RuleProjectInfo" checksum="1129119128" projectName="05-BasePolicies" qualifiedName="05-BasePolicies" sourceCS="FB02D8A0AF28EBCD91A14883D51A97B0" targetCS="1129119128" type="RuleProjectInfo" uuid="b2797773-d8e4-44a4-920a-21775f341271"/>
+<entry baseType="VariableSet" checksum="1752655203" projectName="05-BasePolicies" qualifiedName="io.swisschain.policy.base.ValidateBasedOnAmount.vars" sourceCS="C25461BE6F0D6B6996C95E13C8FEF9D2" targetCS="1752655203" type="VariableSet" uuid="ccc4658c-9f80-482b-bf6b-6bbd8bd1a4e5"/>
+</teamserver>
+</teamservers>

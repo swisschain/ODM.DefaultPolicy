@@ -1,0 +1,129 @@
+# Vocabulary Properties
+io.swisschain.policy.base.NetworkType.PRIVATE#instance.label = PRIVATE
+io.swisschain.policy.base.NetworkType.PUBLIC#instance.label = PUBLIC
+io.swisschain.policy.base.NetworkType.TEST#instance.label = TEST
+uuid = e75c035b-08f0-4db5-b1b8-05092f3cac67
+
+# io.swisschain.policy.base.Asset
+io.swisschain.policy.base.Asset#concept.label = asset
+io.swisschain.policy.base.Asset.address#phrase.action = set the address of {this} to {address}
+io.swisschain.policy.base.Asset.address#phrase.navigation = {address} of {this}
+io.swisschain.policy.base.Asset.id#phrase.action = set the id of {this} to {id}
+io.swisschain.policy.base.Asset.id#phrase.navigation = {id} of {this}
+io.swisschain.policy.base.Asset.symbol#phrase.action = set the symbol of {this} to {symbol}
+io.swisschain.policy.base.Asset.symbol#phrase.navigation = {symbol} of {this}
+
+# io.swisschain.policy.base.Blockchain
+io.swisschain.policy.base.Blockchain#concept.label = blockchain
+io.swisschain.policy.base.Blockchain.id#phrase.action = set the id of {this} to {id}
+io.swisschain.policy.base.Blockchain.id#phrase.navigation = {id} of {this}
+io.swisschain.policy.base.Blockchain.networkType#phrase.action = set the network type of {this} to {network type}
+io.swisschain.policy.base.Blockchain.networkType#phrase.navigation = {network type} of {this}
+io.swisschain.policy.base.Blockchain.protocolId#phrase.action = set the protocol id of {this} to {protocol id}
+io.swisschain.policy.base.Blockchain.protocolId#phrase.navigation = {protocol id} of {this}
+
+# io.swisschain.policy.base.DestinationAddress
+io.swisschain.policy.base.DestinationAddress#concept.label = destination address
+io.swisschain.policy.base.DestinationAddress.address#phrase.action = set the address of {this} to {address}
+io.swisschain.policy.base.DestinationAddress.address#phrase.navigation = {address} of {this}
+io.swisschain.policy.base.DestinationAddress.group#phrase.action = set the group of {this} to {group}
+io.swisschain.policy.base.DestinationAddress.group#phrase.navigation = {group} of {this}
+io.swisschain.policy.base.DestinationAddress.name#phrase.action = set the name of {this} to {name}
+io.swisschain.policy.base.DestinationAddress.name#phrase.navigation = {name} of {this}
+io.swisschain.policy.base.DestinationAddress.tag#phrase.action = set the tag of {this} to {tag}
+io.swisschain.policy.base.DestinationAddress.tag#phrase.navigation = {tag} of {this}
+io.swisschain.policy.base.DestinationAddress.tagType#phrase.action = set the tag type of {this} to {tag type}
+io.swisschain.policy.base.DestinationAddress.tagType#phrase.navigation = {tag type} of {this}
+
+# io.swisschain.policy.base.NetworkType
+io.swisschain.policy.base.NetworkType#concept.label = network type
+io.swisschain.policy.base.NetworkType.Private#instance.label = Private
+io.swisschain.policy.base.NetworkType.Public#instance.label = Public
+io.swisschain.policy.base.NetworkType.Test#instance.label = Test
+
+# io.swisschain.policy.base.SourceAddress
+io.swisschain.policy.base.SourceAddress#concept.label = source address
+io.swisschain.policy.base.SourceAddress.address#phrase.action = set the address of {this} to {address}
+io.swisschain.policy.base.SourceAddress.address#phrase.navigation = {address} of {this}
+io.swisschain.policy.base.SourceAddress.group#phrase.action = set the group of {this} to {group}
+io.swisschain.policy.base.SourceAddress.group#phrase.navigation = {group} of {this}
+io.swisschain.policy.base.SourceAddress.name#phrase.action = set the name of {this} to {name}
+io.swisschain.policy.base.SourceAddress.name#phrase.navigation = {name} of {this}
+
+# io.swisschain.policy.base.TagType
+io.swisschain.policy.base.TagType#concept.label = tag type
+io.swisschain.policy.base.TagType.None#instance.label = None
+io.swisschain.policy.base.TagType.Number#instance.label = Number
+io.swisschain.policy.base.TagType.Text#instance.label = Text
+
+# io.swisschain.policy.base.TransferDetails
+io.swisschain.policy.base.TransferDetails#concept.label = transfer details
+io.swisschain.policy.base.TransferDetails.amount#phrase.action = set the amount of {this} to {amount}
+io.swisschain.policy.base.TransferDetails.amount#phrase.navigation = {amount} of {this}
+io.swisschain.policy.base.TransferDetails.asset#phrase.action = set the asset of {this} to {asset}
+io.swisschain.policy.base.TransferDetails.asset#phrase.navigation = {asset} of {this}
+io.swisschain.policy.base.TransferDetails.blockchain#phrase.action = set the blockchain of {this} to {blockchain}
+io.swisschain.policy.base.TransferDetails.blockchain#phrase.navigation = {blockchain} of {this}
+io.swisschain.policy.base.TransferDetails.destinationAddress#phrase.action = set the destination address of {this} to {destination address}
+io.swisschain.policy.base.TransferDetails.destinationAddress#phrase.navigation = {destination address} of {this}
+io.swisschain.policy.base.TransferDetails.feeLimit#phrase.action = set the fee limit of {this} to {fee limit}
+io.swisschain.policy.base.TransferDetails.feeLimit#phrase.navigation = {fee limit} of {this}
+io.swisschain.policy.base.TransferDetails.operationId#phrase.action = set the operation id of {this} to {operation id}
+io.swisschain.policy.base.TransferDetails.operationId#phrase.navigation = {operation id} of {this}
+io.swisschain.policy.base.TransferDetails.sourceAddress#phrase.action = set the source address of {this} to {source address}
+io.swisschain.policy.base.TransferDetails.sourceAddress#phrase.navigation = {source address} of {this}
+
+# io.swisschain.policy.base.TransferValidationRequest
+io.swisschain.policy.base.TransferValidationRequest#concept.label = transfer validation request
+io.swisschain.policy.base.TransferValidationRequest.checkValidators(java.lang.Integer,java.util.List)#phrase.navigation = Policy requires {this} to be approved with {0} voices from {1}
+io.swisschain.policy.base.TransferValidationRequest.transferDetails#phrase.action = set the transfer details of {this} to {transfer details}
+io.swisschain.policy.base.TransferValidationRequest.transferDetails#phrase.navigation = {transfer details} of {this}
+io.swisschain.policy.base.TransferValidationRequest.validatedBy#phrase.action = set the validated bies of {this} to {validated by}
+io.swisschain.policy.base.TransferValidationRequest.validatedBy#phrase.navigation = {validated by} of {this}
+
+# io.swisschain.policy.base.ValidationResolution
+io.swisschain.policy.base.ValidationResolution#concept.label = validation resolution
+io.swisschain.policy.base.ValidationResolution.Approved#instance.label = Approved
+io.swisschain.policy.base.ValidationResolution.Rejected#instance.label = Rejected
+io.swisschain.policy.base.ValidationResolution.Skipped#instance.label = Skipped
+
+# io.swisschain.policy.base.ValidationResult
+io.swisschain.policy.base.ValidationResult#concept.label = validation result
+io.swisschain.policy.base.ValidationResult.resolution#phrase.action = set the resolution of {this} to {resolution}
+io.swisschain.policy.base.ValidationResult.resolution#phrase.navigation = {resolution} of {this}
+io.swisschain.policy.base.ValidationResult.validatedBy#phrase.action = set the validated by of {this} to {validated by}
+io.swisschain.policy.base.ValidationResult.validatedBy#phrase.navigation = {validated by} of {this}
+
+# io.swisschain.policy.response.TransferValidationReport
+io.swisschain.policy.response.TransferValidationReport#concept.label = transfer validationl report
+io.swisschain.policy.response.TransferValidationReport.registerResponse(io.swisschain.policy.response.TransferValidationResponse)#phrase.action = register response {0} in {this}
+io.swisschain.policy.response.TransferValidationReport.summarize()#phrase.navigation = summarize the result of {this}
+
+# io.swisschain.policy.response.TransferValidationResponse
+io.swisschain.policy.response.TransferValidationResponse#concept.label = transfer validation response
+io.swisschain.policy.response.TransferValidationResponse.comment#phrase.action = set the comment of {this} to {comment}
+io.swisschain.policy.response.TransferValidationResponse.comment#phrase.navigation = {comment} of {this}
+io.swisschain.policy.response.TransferValidationResponse.notifyValidators#phrase.action = set the notify validators of {this} to {notify validator}
+io.swisschain.policy.response.TransferValidationResponse.notifyValidators#phrase.navigation = {notify validator} of {this}
+io.swisschain.policy.response.TransferValidationResponse.resolution#phrase.action = set the resolution of {this} to {resolution}
+io.swisschain.policy.response.TransferValidationResponse.resolution#phrase.navigation = {resolution} of {this}
+io.swisschain.policy.response.TransferValidationResponse.toString()#phrase.navigation = {this} string
+
+# io.swisschain.policy.response.TransferValidationResult
+io.swisschain.policy.response.TransferValidationResult#concept.label = transfer validation result
+io.swisschain.policy.response.TransferValidationResult.Approve#instance.label = Approve
+io.swisschain.policy.response.TransferValidationResult.Decline#instance.label = Decline
+io.swisschain.policy.response.TransferValidationResult.Wait#instance.label = Wait
+
+# io.swisschain.policy.response.Validator
+io.swisschain.policy.response.Validator#concept.label = validator
+io.swisschain.policy.response.Validator.id#phrase.action = set the id of {this} to {id}
+io.swisschain.policy.response.Validator.id#phrase.navigation = {id} of {this}
+io.swisschain.policy.response.Validator.name#phrase.action = set the name of {this} to {name}
+io.swisschain.policy.response.Validator.name#phrase.navigation = {name} of {this}
+
+# io.swisschain.policy.response.ValidatorWithWeight
+io.swisschain.policy.response.ValidatorWithWeight#concept.label = validator with weight
+io.swisschain.policy.response.ValidatorWithWeight.create(io.swisschain.policy.response.Validator,java.lang.Integer)#phrase.navigation = validator with id {0} and voices count {1}
+io.swisschain.policy.response.ValidatorWithWeight.validator#phrase.navigation = {validator} of {this}
+io.swisschain.policy.response.ValidatorWithWeight.weight#phrase.navigation = {weight} of {this}

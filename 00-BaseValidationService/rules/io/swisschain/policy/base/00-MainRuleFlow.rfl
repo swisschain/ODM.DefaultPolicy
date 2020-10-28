@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.ruleflow:RuleFlow xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.ruleflow="http://ilog.rules.studio/model/ruleflow.ecore">
+  <name>00-MainRuleFlow</name>
+  <uuid>849e91a8-204f-4305-bbb9-af38a7227f25</uuid>
+  <locale>en_US</locale>
+  <categories>any</categories>
+  <rfModel>
+<Ruleflow xmlns="http://schemas.ilog.com/Rules/7.0/Ruleflow">
+  <Body>
+    <TaskList>
+      <StartTask Identifier="task_0"/>
+      <ActionTask Identifier="Initialize response">
+        <Actions Language="bal"><![CDATA[set 'the response' to 'the Wait response' ;]]></Actions>
+      </ActionTask>
+      <SubflowTask Identifier="Amount Based Validation" Uuid="14389c26-86c1-4331-8c47-69d804bbd5c3"/>
+      <ActionTask Identifier="Summarize responses">
+        <Actions Language="bal"><![CDATA[set 'the response' to summarize the result of 'the list of responses' ;]]></Actions>
+      </ActionTask>
+      <ActionTask Identifier="task_1">
+        <Actions Language="bal"><![CDATA[print 'the response' string ;]]></Actions>
+      </ActionTask>
+      <StopTask Identifier="task_2"/>
+    </TaskList>
+    <NodeList>
+      <TaskNode Identifier="node_0" Task="task_0"/>
+      <TaskNode Identifier="node_2" Task="task_2"/>
+      <TaskNode Identifier="node_3" Task="Initialize response"/>
+      <TaskNode Identifier="node_1" Task="Amount Based Validation"/>
+      <TaskNode Identifier="node_7" Task="Summarize responses"/>
+      <TaskNode Identifier="node_8" Task="task_1"/>
+    </NodeList>
+    <TransitionList>
+      <Transition Identifier="transition_0" Source="node_0" Target="node_3"/>
+      <Transition Identifier="transition_8" Source="node_7" Target="node_8"/>
+      <Transition Identifier="transition_6" Source="node_8" Target="node_2"/>
+      <Transition Identifier="transition_1" Source="node_3" Target="node_1"/>
+      <Transition Identifier="transition_2" Source="node_1" Target="node_7"/>
+    </TransitionList>
+  </Body>
+  <Resources>
+    <ResourceSet Locale="ru_RU">
+      <Data Name="node_7#y">404.8797</Data>
+      <Data Name="node_8#x">202.07053</Data>
+      <Data Name="node_8#y">484.8797</Data>
+      <Data Name="node_9#x">477.65088</Data>
+      <Data Name="node_5#name">node_5</Data>
+      <Data Name="node_9#y">258.9488</Data>
+      <Data Name="node_2#name">node_2</Data>
+      <Data Name="node_1#label">Daily Amount Based Validation</Data>
+      <Data Name="node_3#y">128.01788</Data>
+      <Data Name="node_4#x">269.16702</Data>
+      <Data Name="node_8#label">Print result</Data>
+      <Data Name="node_4#y">208.01788</Data>
+      <Data Name="node_5#x">-57.64698</Data>
+      <Data Name="node_5#y">258.9488</Data>
+      <Data Name="node_6#x">249.98157</Data>
+      <Data Name="node_6#y">353.9488</Data>
+      <Data Name="node_7#x">176.29709</Data>
+      <Data Name="node_0#x">305.27692</Data>
+      <Data Name="node_0#y">58.017883</Data>
+      <Data Name="node_1#x">192.54883</Data>
+      <Data Name="node_8#name">node_8</Data>
+      <Data Name="node_2#x">252.07053</Data>
+      <Data Name="node_1#y">258.9488</Data>
+      <Data Name="node_2#y">564.8797</Data>
+      <Data Name="node_3#x">242.48004</Data>
+      <Data Name="node_1#name">node_1</Data>
+      <Data Name="node_5#label">Amount Based Validation</Data>
+      <Data Name="node_4#name">node_4</Data>
+      <Data Name="node_7#name">node_7</Data>
+      <Data Name="node_6#name">node_6</Data>
+      <Data Name="node_9#name">node_9</Data>
+      <Data Name="node_0#name">node_0</Data>
+      <Data Name="node_9#label">Daily Transfers Count Validation</Data>
+      <Data Name="node_3#name">node_3</Data>
+    </ResourceSet>
+    <ResourceSet Locale="en_US">
+      <Data Name="node_2#height">22.0</Data>
+      <Data Name="node_3#height">53.402344</Data>
+      <Data Name="node_1#height">82.80469</Data>
+      <Data Name="node_0#height">21.0</Data>
+      <Data Name="node_7#y">333.908203125</Data>
+      <Data Name="node_8#x">51.339813232421875</Data>
+      <Data Name="node_8#y">437.310546875</Data>
+      <Data Name="node_2#name">node_2</Data>
+      <Data Name="node_7#height">53.402344</Data>
+      <Data Name="node_1#label">Amount Based Validation</Data>
+      <Data Name="node_7#width">102.67969</Data>
+      <Data Name="node_8#height">53.402344</Data>
+      <Data Name="node_2#width">22.0</Data>
+      <Data Name="node_0#width">21.0</Data>
+      <Data Name="node_3#y">97.70117</Data>
+      <Data Name="node_8#label">Print result</Data>
+      <Data Name="node_7#x">51.339874267578125</Data>
+      <Data Name="node_0#x">51.33984375</Data>
+      <Data Name="node_0#y">10.5</Data>
+      <Data Name="node_1#x">51.339844</Data>
+      <Data Name="node_8#name">node_3</Data>
+      <Data Name="node_2#x">51.339844</Data>
+      <Data Name="node_1#y">215.80469</Data>
+      <Data Name="node_2#y">525.0117</Data>
+      <Data Name="node_3#x">51.339844</Data>
+      <Data Name="node_1#name">node_5</Data>
+      <Data Name="node_3#width">102.0</Data>
+      <Data Name="node_8#width">102.0</Data>
+      <Data Name="node_7#name">node_3</Data>
+      <Data Name="node_1#width">102.0</Data>
+      <Data Name="node_0#name">node_0</Data>
+      <Data Name="node_3#name">node_3</Data>
+    </ResourceSet>
+  </Resources>
+  <Properties/>
+</Ruleflow>
+</rfModel>
+</ilog.rules.studio.model.ruleflow:RuleFlow>

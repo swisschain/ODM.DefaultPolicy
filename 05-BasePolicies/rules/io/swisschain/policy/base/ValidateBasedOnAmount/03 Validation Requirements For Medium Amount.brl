@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>03 Validation Requirements For Medium Amount</name>
+  <uuid>11a56caf-d1f9-4c62-b617-c127e7fc251e</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions 
+	set DmitryMakarevichIOS to validator with id DmitryMakarevichIOSID  and voices count 1 ;	
+	set DmitryMakarevichAndroid to validator with id DmitryMakarevichAndroidID and voices count 1 ;	
+	set AntonRozdorozhniukIOS to validator with id AntonRozdorozhniukIOSID and voices count 1 ;	
+	set AlexanderUshakovIOS to validator with id AlexanderUshakovIOSID and voices count 1 ;	
+then
+ set 'the result of amount based validation'  to Policy requires 'the transfer validation request' to be approved with 1 voices from { DmitryMakarevichIOS , DmitryMakarevichAndroid , AntonRozdorozhniukIOS , AlexanderUshakovIOS  } ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

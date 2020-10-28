@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<teamservers>
+<teamserver>
+<target dataSource="" login="odmAdmin" url="http://158.177.182.90:9060/decisioncenter"/>
+<entry baseType="B2XMapping" checksum="2218380786" projectName="08-ValidationBaseBOM" qualifiedName="10-DefaultPolicy" sourceCS="A5823A22DC1620CFB701FDBD91A3C612" targetCS="2218380786" type="B2XMapping" uuid="2178e309-689b-4f19-95ec-0c00cacc3ed0"/>
+<entry baseType="BusinessObjectModel" checksum="3617822326" projectName="08-ValidationBaseBOM" qualifiedName="10-DefaultPolicy" sourceCS="8864568998B13E7B0763F4042F476077" targetCS="3617822326" type="BusinessObjectModel" uuid="e50036aa-ce7b-4458-b16b-01be6790fd1e"/>
+<entry baseType="Resource" checksum="520597342" projectName="08-ValidationBaseBOM" qualifiedName="xom-libraries/10-DefaultPolicy.zip" sourceCS="D636EAF205B8A3FFA1435D35F7F15808" targetCS="520597342" type="Resource" uuid="xom-libraries/10-DefaultPolicy.zip"/>
+<entry baseType="RuleProjectInfo" checksum="3033029479" projectName="08-ValidationBaseBOM" qualifiedName="08-ValidationBaseBOM" sourceCS="84EE261698CC8D25D5CE4DC9977E0946" targetCS="3033029479" type="RuleProjectInfo" uuid="23b8919a-5392-4c7d-aa16-95effbfa20e8"/>
+<entry baseType="VariableSet" checksum="2847345708" projectName="08-ValidationBaseBOM" qualifiedName="input" sourceCS="CE69E069342065E5E15B591358899DAD" targetCS="2847345708" type="VariableSet" uuid="57027122-8d79-48b0-936b-af0304111070"/>
+<entry baseType="VariableSet" checksum="3871383604" projectName="08-ValidationBaseBOM" qualifiedName="output" sourceCS="505C0B1CE4C6850964D3F6E48B7736A1" targetCS="3871383604" type="VariableSet" uuid="fb6218ea-8f04-412c-8a85-139d4659bd50"/>
+<entry baseType="VariableSet" checksum="2669023703" projectName="08-ValidationBaseBOM" qualifiedName="responses" sourceCS="2C28434DFCDA7435C8B1B7805035BA87" targetCS="2669023703" type="VariableSet" uuid="32fef699-caad-4bbb-b905-b59c25a2cb9f"/>
+<entry baseType="VariableSet" checksum="3560705038" projectName="08-ValidationBaseBOM" qualifiedName="rulesetVars" sourceCS="B7A92637AD81B86C40A1B82525F837C3" targetCS="3560705038" type="VariableSet" uuid="14e3610c-8df5-4fa4-af9a-437c07570c57"/>
+<entry baseType="VariableSet" checksum="2696847741" projectName="08-ValidationBaseBOM" qualifiedName="validators" sourceCS="FCDBFE34EE787C1A1BAEB37843226277" targetCS="2696847741" type="VariableSet" uuid="96fd4712-a67a-4880-b6dd-4d8342c62cf4"/>
+<entry baseType="Vocabulary" checksum="1342528821" projectName="08-ValidationBaseBOM" qualifiedName="10-DefaultPolicy_en_US" sourceCS="9C3CFFED082B680C9C05D1C8BD0711E6" targetCS="1342528821" type="Vocabulary" uuid="e75c035b-08f0-4db5-b1b8-05092f3cac67"/>
+</teamserver>
+</teamservers>

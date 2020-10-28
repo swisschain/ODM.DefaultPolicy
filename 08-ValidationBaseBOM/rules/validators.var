@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>validators</name>
+  <uuid>96fd4712-a67a-4880-b6dd-4d8342c62cf4</uuid>
+  <variables name="DmitryMakarevichIOSID" type="io.swisschain.policy.response.Validator" initialValue="new io.swisschain.policy.response.Validator(&quot;DmitryMakarevichIOSID&quot;, &quot;t5zNsTYMOVhMkUwfAl9c8ZeXg52NDd2QWvSzipQJmGc=&quot;)" verbalization="DmitryMakarevichIOSID"/>
+  <variables name="DmitryMakarevichAndroidID" type="io.swisschain.policy.response.Validator" initialValue="new io.swisschain.policy.response.Validator(&quot;DmitryMakarevichAndroidID&quot;, &quot;yhLhd1/MCI15qznsTvnDEiyn8gxgIrVVJNQ7K6nWDH4=&quot;)" verbalization="DmitryMakarevichAndroidID"/>
+  <variables name="AntonRozdorozhniukIOSID" type="io.swisschain.policy.response.Validator" initialValue="new io.swisschain.policy.response.Validator(&quot;AntonRozdorozhniukIOSID&quot;, &quot;QR8vqAK5ujFY2sStqLFoiVD6p40cipBVRrHIuRb51dc=&quot;)" verbalization="AntonRozdorozhniukIOSID"/>
+  <variables name="AlexanderUshakovIOSID" type="io.swisschain.policy.response.Validator" initialValue="new io.swisschain.policy.response.Validator(&quot;AlexanderUshakovIOSID&quot;, &quot;kmDYDyjXYwQ596aWt9V35rIg1OdNOOuCB8h/dWzUzyk=&quot;)" verbalization="AlexanderUshakovIOSID"/>
+</ilog.rules.studio.model.base:VariableSet>
