@@ -22,6 +22,7 @@ public class TransferValidationReport {
 			listOfValidators.addAll(response.getNotifyValidators());
 			if (response.getResolution() == TransferValidationResult.Decline) {
 				result.setResolution(TransferValidationResult.Decline);
+				result.setComment("Rejected vy validators");
 			} else if (response.getResolution() == TransferValidationResult.Wait) {
 				if (result.getResolution() != TransferValidationResult.Decline) {
 					result.setResolution(TransferValidationResult.Wait);

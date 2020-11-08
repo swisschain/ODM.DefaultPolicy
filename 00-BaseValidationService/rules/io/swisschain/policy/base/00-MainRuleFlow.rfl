@@ -19,6 +19,7 @@
       <ActionTask Identifier="task_1">
         <Actions Language="bal"><![CDATA[print 'the response' string ;]]></Actions>
       </ActionTask>
+      <SubflowTask Identifier="Internal Transfer" Uuid="9fc71749-765c-4a19-8c5a-45ce508db277"/>
       <StopTask Identifier="task_2"/>
     </TaskList>
     <NodeList>
@@ -28,6 +29,7 @@
       <TaskNode Identifier="node_1" Task="Amount Based Validation"/>
       <TaskNode Identifier="node_7" Task="Summarize responses"/>
       <TaskNode Identifier="node_8" Task="task_1"/>
+      <TaskNode Identifier="node_5" Task="Internal Transfer"/>
     </NodeList>
     <TransitionList>
       <Transition Identifier="transition_0" Source="node_0" Target="node_3"/>
@@ -35,6 +37,10 @@
       <Transition Identifier="transition_6" Source="node_8" Target="node_2"/>
       <Transition Identifier="transition_1" Source="node_3" Target="node_1"/>
       <Transition Identifier="transition_2" Source="node_1" Target="node_7"/>
+      <Transition Identifier="transition_3" Source="node_3" Target="node_5">
+        <Conditions Language="bal"><![CDATA[the group of the source address of the transfer details of 'the transfer validation request' is the group of the destination address of the transfer details of 'the transfer validation request' ]]></Conditions>
+      </Transition>
+      <Transition Identifier="transition_4" Source="node_5" Target="node_8"/>
     </TransitionList>
   </Body>
   <Resources>
@@ -79,11 +85,14 @@
       <Data Name="node_3#height">53.402344</Data>
       <Data Name="node_1#height">82.80469</Data>
       <Data Name="node_0#height">21.0</Data>
-      <Data Name="node_7#y">333.908203125</Data>
-      <Data Name="node_8#x">51.339813232421875</Data>
-      <Data Name="node_8#y">437.310546875</Data>
+      <Data Name="node_7#y">333.9082</Data>
+      <Data Name="node_8#x">124.66989</Data>
+      <Data Name="node_8#y">437.31055</Data>
+      <Data Name="node_5#name">node_5</Data>
+      <Data Name="transition_3#label">Source group == Destination Group</Data>
       <Data Name="node_2#name">node_2</Data>
       <Data Name="node_7#height">53.402344</Data>
+      <Data Name="node_5#height">53.402344</Data>
       <Data Name="node_1#label">Amount Based Validation</Data>
       <Data Name="node_7#width">102.67969</Data>
       <Data Name="node_8#height">53.402344</Data>
@@ -91,16 +100,20 @@
       <Data Name="node_0#width">21.0</Data>
       <Data Name="node_3#y">97.70117</Data>
       <Data Name="node_8#label">Print result</Data>
-      <Data Name="node_7#x">51.339874267578125</Data>
-      <Data Name="node_0#x">51.33984375</Data>
+      <Data Name="node_5#x">51.0</Data>
+      <Data Name="node_5#y">333.9082</Data>
+      <Data Name="node_7#x">203.33987</Data>
+      <Data Name="node_5#width">102.0</Data>
+      <Data Name="node_0#x">124.66992</Data>
       <Data Name="node_0#y">10.5</Data>
-      <Data Name="node_1#x">51.339844</Data>
+      <Data Name="node_1#x">203.33984</Data>
       <Data Name="node_8#name">node_3</Data>
-      <Data Name="node_2#x">51.339844</Data>
+      <Data Name="node_2#x">124.66992</Data>
       <Data Name="node_1#y">215.80469</Data>
       <Data Name="node_2#y">525.0117</Data>
-      <Data Name="node_3#x">51.339844</Data>
+      <Data Name="node_3#x">124.66992</Data>
       <Data Name="node_1#name">node_5</Data>
+      <Data Name="node_5#label">Internal Transfer</Data>
       <Data Name="node_3#width">102.0</Data>
       <Data Name="node_8#width">102.0</Data>
       <Data Name="node_7#name">node_3</Data>

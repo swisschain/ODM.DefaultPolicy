@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>InternalTransfer</name>
+  <uuid>7a7f2d81-f259-4a7c-9e18-15ed2527252b</uuid>
+</ilog.rules.studio.model.base:RulePackage>

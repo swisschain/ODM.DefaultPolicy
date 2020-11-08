@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="InternalTransfer" usingRuleflow="true" ruleflowName="00 InternalTransfer" targetRuleProjectName="05-BasePolicies">
+  <name>InternalTransfer</name>
+  <uuid>78e4a986-e281-4609-a373-051aafc07a53</uuid>
+  <referencedVariables variableName="transferValidationRequest" variableSetName="input">
+    <variableSet href="../../08-ValidationBaseBOM/rules/input.var#57027122-8d79-48b0-936b-af0304111070"/>
+  </referencedVariables>
+  <referencedVariables variableName="response" variableSetName="output" direction="OUT">
+    <variableSet href="../../08-ValidationBaseBOM/rules/output.var#fb6218ea-8f04-412c-8a85-139d4659bd50"/>
+  </referencedVariables>
+  <ruleflow href="../rules/io/swisschain/policy/base/InternalTransfer/00%20InternalTransfer.rfl#9fc71749-765c-4a19-8c5a-45ce508db277"/>
+  <extractor xsi:type="ilog.rules.studio.model.query.extractor:QueryExtractor" name="InternalTransfer_extractor" validator="Default Validator"/>
+  <targetRuleProject href="../../05-BasePolicies#b2797773-d8e4-44a4-920a-21775f341271"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>
